@@ -1,6 +1,10 @@
 .container {
-    margin: 2px;
-    padding: 3px;
-    width: 90vw;
-    display: flex;
+    background-color: antiquewhite;
+}
+
+.container h1 {
+    background-color: rgba(78, 20, 20, 0.603);
+    color: rgb(209, 228, 37);
+    padding: 8px;
+    font-size: 2rem;
 }
