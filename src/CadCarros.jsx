@@ -16,7 +16,7 @@ export const CadCarros = () => {
                         </div>
                         <div>
                             <label>
-                                <span>Placa do carro:</span>
+                                <span>Placa:</span>
                                 <input type="text" placeholder='Digite a placa do carro' />
                             </label>
                         </div>
@@ -34,7 +34,7 @@ export const CadCarros = () => {
                         </div>
                         <div>
                             <label>
-                                <span>Ano de Fabricação:</span>
+                                <span>Fabricação:</span>
                                 <input type="text" placeholder='Digite o ano de fabricação do carro' />
                             </label>
                         </div>
@@ -48,13 +48,13 @@ export const CadCarros = () => {
                         </div>
                         <div>
                             <label>
-                                <span>Nome Completo:</span>
+                                <span>Nome:</span>
                                 <input type="text" placeholder='Digite o nome completo' />
                             </label>
                         </div>
                         <div>
                             <label>
-                                <span>Endereço Completo:</span>
+                                <span>Endereço:</span>
                                 <input type="text" placeholder='Digite o endereço completo' />
                             </label>
                         </div>
@@ -73,6 +73,8 @@ export const CadCarros = () => {
                     </form>
                 </div>
             </div>
+            <input type="submit" value="ENVIAR" />
+            <hr />
         </div>
     )
 }

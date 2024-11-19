@@ -9,6 +9,7 @@ function App() {
     <div className='container'>
       <h1>Cadastro de Carros</h1>
       <CadCarros />
+      <h1>Dados cadastrados</h1>
     </div>
   )
 }
