@@ -1,9 +1,16 @@
 {
-    "products": [
+    "register": [
         {
-            "nome": "Ueveton",
-            "value": 10,
-            "id": "1"
+            "id": "1",
+            "modelo": "Fiesta Rocan",
+            "placa": "UTF1518",
+            "marca": "Ford",
+            "cor": "Prata",
+            "fabricacao": "2011-2022",
+            "nome": "Ueveton Soares Pereira",
+            "endereco": "Rua S, 80, Aeroporto",
+            "telefone": "27988327582",
+            "cpf": "87435716802"
         }
     ]
 }

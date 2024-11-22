@@ -1,10 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import { CadCarros } from './CadCarros'
 import { ListCad } from './ListCad'
 
+const url = "http://localhost:3000/register"
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [register, setRegister] = useState([]);
+
+  useEffect(() => {
+    console.log("Carregou")
+    async function getData() {
+      const res = await fetch(url)
+      const data = await res.json()
+      console.log(data)
+    }
+    getData();
+  }, []);
 
   return (
     <div className='container'>
