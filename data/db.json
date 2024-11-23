@@ -1,16 +1,52 @@
 {
-    "register": [
-        {
-            "id": "1",
-            "modelo": "Fiesta Rocan",
-            "placa": "UTF1518",
-            "marca": "Ford",
-            "cor": "Prata",
-            "fabricacao": "2011-2022",
-            "nome": "Ueveton Soares Pereira",
-            "endereco": "Rua S, 80, Aeroporto",
-            "telefone": "27988327582",
-            "cpf": "87435716802"
-        }
-    ]
+  "register": [
+    {
+      "id": "1",
+      "modelo": "Fiesta Rocan",
+      "placa": "UTF1518",
+      "marca": "Ford",
+      "cor": "Prata",
+      "fabricacao": "2011-2022",
+      "nome": "Ueveton Soares Pereira",
+      "endereco": "Rua S, 80, Aeroporto",
+      "telefone": "27988327582",
+      "cpf": "87435716802"
+    },
+    {
+      "id": "2",
+      "modelo": "Golf",
+      "placa": "UTF1518",
+      "marca": "Volkswagen",
+      "cor": "Prata",
+      "fabricacao": "2011-2022",
+      "nome": "Heitor da silva Soares",
+      "endereco": "Rua S, 80, Aeroporto",
+      "telefone": "27997004202",
+      "cpf": "87435716802"
+    },
+    {
+      "id": "bff0",
+      "modelo": "Ecosport",
+      "placa": "MCU1545",
+      "marca": "FORD",
+      "cor": "BRANCO",
+      "fabricacao": "2016/2017",
+      "nome": "MARIA CAROLINA DA SILVA",
+      "endereco": "RUA S, 80, AEROPORTO",
+      "telefone": "27997583590",
+      "cpf": "16785103508"
+    },
+    {
+      "id": "7fed",
+      "modelo": "ONIX",
+      "placa": "THS1A25",
+      "marca": "CHEVROLET",
+      "cor": "PRETO",
+      "fabricacao": "2018/2018",
+      "nome": "HUDSON DE OLIVEIRA GINELI",
+      "endereco": "RUA T, 150, MAZARIN",
+      "telefone": "27999999999",
+      "cpf": "587165124808"
+    }
+  ]
 }

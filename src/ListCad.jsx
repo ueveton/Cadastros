@@ -1,7 +1,22 @@
 import React from 'react'
 import "./ListCad.css"
+import { useState, useEffect } from 'react'
+
+const url = "http://localhost:3000/register"
 
 export const ListCad = () => {
+    const [register, setRegister] = useState([]);
+
+    useEffect(() => {
+        console.log("Carregou")
+        async function getData() {
+        const res = await fetch(url)
+        const data = await res.json()
+        setRegister(data)
+        }
+        getData();
+    }, []);
+
     return (
         <div>
             <table id='table'>
@@ -16,18 +31,20 @@ export const ListCad = () => {
                     <th>Telefone</th>
                     <th>CPF</th>
                 </tr>
-                <tr>
-                    <td>Fiesta Rocan</td>
-                    <td>UTF1518</td>
-                    <td>Ford</td>
-                    <td>Prata</td>
-                    <td>2011-2012</td>
-                    <td>Ueveton Soares Pereira</td>
-                    <td>Rua S, 80, Aeroporto</td>
-                    <td>27988357582</td>
-                    <td>87435716802</td>
-                </tr>
-                <tr>
+                {register.map((registers) => (
+                    <tr key={registers.id}>
+                        <td>{registers.modelo}</td>
+                        <td>{registers.placa}</td>
+                        <td>{registers.marca}</td>
+                        <td>{registers.cor}</td>
+                        <td>{registers.fabricacao}</td>
+                        <td>{registers.nome}</td>
+                        <td>{registers.endereco}</td>
+                        <td>{registers.telefone}</td>
+                        <td>{registers.cpf}</td>
+                    </tr>
+                ))}
+                {/* <tr>
                     <td>New Fiesta</td>
                     <td>AWT8A25</td>
                     <td>Ford</td>
@@ -48,7 +65,7 @@ export const ListCad = () => {
                     <td>Rua S, 80, Aeroporto</td>
                     <td>27997583590</td>
                     <td>01275906588</td>
-                </tr>
+                </tr> */}
             </table>
         </div>
     )
