@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ListCad.css"
+// import "./ListCad.css"
 import { useState, useEffect } from 'react'
 
 const url = "http://localhost:3000/register"
@@ -19,7 +19,7 @@ export const ListCad = () => {
 
     return (
         <div>
-            <table id='table'>
+            {/* <table id='table'>
                 <thead>
                     <tr>
                         <th>Modelo</th>
@@ -48,7 +48,7 @@ export const ListCad = () => {
                         </tr>
                     ))}
                 </tbody>
-            </table>
+            </table> */}
         </div>
     )
 }

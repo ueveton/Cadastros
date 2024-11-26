@@ -37,28 +37,16 @@
       "cpf": "16785103508"
     },
     {
-      "id": "2606",
+      "id": "d54d",
       "modelo": "a",
       "placa": "a",
       "marca": "a",
       "cor": "a",
       "fabricacao": "a",
-      "nome": "a",
-      "endereco": "a",
+      "nome": "teste",
+      "endereco": "carregamento",
       "telefone": "a",
       "cpf": "a"
-    },
-    {
-      "id": "14ce",
-      "modelo": "",
-      "placa": "",
-      "marca": "",
-      "cor": "",
-      "fabricacao": "",
-      "nome": "",
-      "endereco": "",
-      "telefone": "",
-      "cpf": ""
     }
   ]
 }
