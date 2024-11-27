@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { useFetch } from './hooks/useFetch'
 import './CadCarros.css'
 
 const url = "http://localhost:3000/register"
@@ -9,14 +10,7 @@ export const CadCarros = () => {
     //get
     const [register, setRegister] = useState([]);
 
-    useEffect(() => {
-        async function getData() {
-            const res = await fetch(url);
-            const data = await res.json();
-            setRegister(data);
-        }
-        getData();
-    }, []);
+    const { data: itens, httpConfig, loading } = useFetch(url)
 
     //Envio de dados
     const [modelo, setModelo] = useState("")
@@ -31,27 +25,19 @@ export const CadCarros = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const register = {
-            modelo,
-            placa,
-            marca,
-            cor,
-            fabricacao,
-            nome,
-            endereco,
-            telefone,
-            cpf
-        };
-        const res = await fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(register),
-        });
 
-        const addedRegister = await res.json();
-        setRegister((prevRegister) => [...prevRegister, addedRegister])
+        const register = {
+                modelo,
+                placa,
+                marca,
+                cor,
+                fabricacao,
+                nome,
+                endereco,
+                telefone,
+                cpf
+        };
+        httpConfig(register, "POST")
     }
 
     return (
@@ -67,7 +53,7 @@ export const CadCarros = () => {
                                         type="text"
                                         onChange={(e) => setModelo(e.target.value)}
                                         value={modelo}
-                                        placeholder='Modelo do carro' 
+                                        placeholder='Modelo do carro'
                                     />
                                 </label>
                             </div>
@@ -162,12 +148,15 @@ export const CadCarros = () => {
                                 </label>
                             </div>
                         </div>
-                        <input type="submit" value="ENVIAR" />
+                        {/* <input type="submit" value="ENVIAR" /> */}
+                        {loading && <input type="submit" disabled value="Aguarde" />}
+                        {!loading && <input type="submit" value="Enviar" />}
                     </form>
                 </div>
             </div>
             <hr />
             <h1>Dados cadastrados</h1>
+            {loading && <p>Carregando dados. Aguarde...</p>}
             <table id='table'>
                 <thead>
                     <tr>
@@ -183,7 +172,7 @@ export const CadCarros = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {register.map((registers) => (
+                    {itens && itens.map((registers) => (
                         <tr key={registers.id}>
                             <td>{registers.modelo}</td>
                             <td>{registers.placa}</td>

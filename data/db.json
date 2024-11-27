@@ -6,7 +6,7 @@
       "placa": "UTF1518",
       "marca": "Ford",
       "cor": "Prata",
-      "fabricacao": "2011-2022",
+      "fabricacao": "2011/2022",
       "nome": "Ueveton Soares Pereira",
       "endereco": "Rua S, 80, Aeroporto",
       "telefone": "27988327582",
@@ -18,7 +18,7 @@
       "placa": "UTF1518",
       "marca": "Volkswagen",
       "cor": "Prata",
-      "fabricacao": "2011-2022",
+      "fabricacao": "2011/2022",
       "nome": "Heitor da silva Soares",
       "endereco": "Rua S, 80, Aeroporto",
       "telefone": "27997004202",
@@ -35,18 +35,6 @@
       "endereco": "RUA S, 80, AEROPORTO",
       "telefone": "27997583590",
       "cpf": "16785103508"
-    },
-    {
-      "id": "d54d",
-      "modelo": "a",
-      "placa": "a",
-      "marca": "a",
-      "cor": "a",
-      "fabricacao": "a",
-      "nome": "teste",
-      "endereco": "carregamento",
-      "telefone": "a",
-      "cpf": "a"
     }
   ]
 }
